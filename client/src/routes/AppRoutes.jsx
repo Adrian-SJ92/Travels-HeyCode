@@ -8,6 +8,9 @@ import { AdminLayouts } from '../layouts/AdminLayouts.jsx';
 
 //Componentes Públicos
 const Home = lazy(() => import('../pages/PublicPages/Home/Home.jsx'));
+const About = lazy(() => import('../pages/PublicPages/About/About.jsx'));
+const Login = lazy(() => import('../pages/PublicPages/Login/Login.jsx'));
+const Register = lazy(() => import('../pages/PublicPages/Register/Register.jsx'));
 
 //Componentes User
 const UserDashboard = lazy(()=> import('../pages/UserPages/userDashboard/UserDashboard.jsx'));
@@ -25,6 +28,9 @@ export const AppRoutes = () => {
           <Route element={<PublicRoutes />}>
             <Route element={<PublicLayouts />}>
               <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/login" element={<Login />} />
             </Route>
           </Route>
           {/* Rutas de user */}
