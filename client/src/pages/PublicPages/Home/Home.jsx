@@ -9,6 +9,7 @@ const Home = () => {
         <Row>
           <Col className='d-flex flex-column align-items-center justify-content-center'>
           <h1>Travels</h1>
+          
           <div className='portada'>
             <img src="/assets/images/viajesApp.jpg" alt="" />
 
