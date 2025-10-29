@@ -11,7 +11,7 @@ const Home = () => {
           <h1>Travels</h1>
           
           <div className='portada'>
-            <img src="/assets/images/viajesApp.jpg" alt="" />
+            <img src="/assets/images/viajesApp.jpg" alt="imagen portada" />
 
           </div>
           </Col>
