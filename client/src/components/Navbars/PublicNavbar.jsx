@@ -15,16 +15,16 @@ export const PublicNavbar = () => {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link as={Link} to="/" href="#action1">
+            <Nav.Link as={Link} to="/">
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="/about" href="#action2">
+            <Nav.Link as={Link} to="/about">
               About
             </Nav.Link>
           </Nav>
           <div className='d-flex gap-2'>
-            <Button variant="outline-success" onClick={()=>navigate("/login")}>Login</Button>
             <Button variant="outline-success" onClick={()=>navigate("/register")}>Register</Button>
+            <Button variant="outline-success" onClick={()=>navigate("/login")}>Login</Button>
           </div>
         </Navbar.Collapse>
       </Container>
